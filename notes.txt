@@ -2,3 +2,36 @@ https://docs.docker.com/get-started/   (watch the video and go through the guide
 
 
 https://labs.play-with-docker.com/
+
+
+
+Spitting out file from docker:
+
+
+Dockerfile content:
+--------------------------
+FROM debian:unstable
+WORKDIR /papa
+COPY script.sh script.sh
+RUN chmod 777 script.sh
+CMD bash -C 'script.sh'
+
+
+Workdir creates a directory in container and uses that as base,
+copy will copy the script.sh from host to workdir/script.sh (/papa/script.sh)
+
+the docker will stop as soon as scripts stops
+
+script.sh content:
+-------------------------------
+#!/bin/bash
+echo 'hello' > '/tata/test.txt'
+
+
+we will bind mount the host direcotry to container direcoty using docker desktop in Run -> optional settings
+in our case to /tata/  direcotry in container , as the script.sh will save the file there, bind mount will auto create the dir if donesn't exists
+
+
+
+To copy file from container live use docker cp command:
+https://stackoverflow.com/a/22050116
