@@ -35,6 +35,8 @@ in our case to /tata/  direcotry in container , as the script.sh will save the f
 
 To copy file from container live use docker cp command:
 https://stackoverflow.com/a/22050116
+& vice versa:
+https://stackoverflow.com/questions/22907231/how-to-copy-files-from-host-to-docker-container
 
 
 To build docker image:
