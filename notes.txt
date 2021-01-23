@@ -44,3 +44,9 @@ https://docs.docker.com/get-started/02_our_app/
 eg:
  docker build -t getting-started .
  where -t is tag name and . is the dir containing Dockerfile
+ 
+ -----------------------
+ I tried building all binaries compilatino project with docker, but problem is with mips,
+ i have to use openwrt toolchain (gcc etc) to build, the official debain mips gcc desn't work
+I tried comipling simple helo world progmra https://www.linuxtopia.org/online_books/an_introduction_to_gcc/gccintro_9.html 
+with debain and  openwrt toolchain, the other one worked in mips router
