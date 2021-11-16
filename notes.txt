@@ -56,8 +56,10 @@ with debain and  openwrt toolchain, the other one worked in mips router
 Running docker application (for example a specific version of node)
 
 docker pull node:15.14.0-alpine3.13
-Run the application in docker desktop and mount the package folder from settings and get the name of docker container
-docker exec -ti zen_feynman node script.js
-(zen_feynman is container name)
+Run the application in docker desktop and mount the package folder from settings
+open container terminal and excute your commands
+
+
+
 
 ref: https://docs.docker.com/engine/reference/commandline/exec/
