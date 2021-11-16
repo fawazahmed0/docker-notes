@@ -50,3 +50,14 @@ eg:
  i have to use openwrt toolchain (gcc etc) to build, the official debain mips gcc desn't work
 I tried comipling simple helo world progmra https://www.linuxtopia.org/online_books/an_introduction_to_gcc/gccintro_9.html 
 with debain and  openwrt toolchain, the other one worked in mips router
+
+
+---------------
+Running docker application (for example a specific version of node)
+
+docker pull node:15.14.0-alpine3.13
+Run the application in docker desktop and get the name of docker container
+docker exec -ti zen_feynman node script.js
+(zen_feynman is container name)
+
+ref: https://docs.docker.com/engine/reference/commandline/exec/
